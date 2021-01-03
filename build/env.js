@@ -65,7 +65,7 @@ function getCwd() {
 }
 exports.getCwd = getCwd;
 function parsePackageJson() {
-    var absPath = path.resolve(getCwd(), 'package.json');
+    var absPath = path.resolve(getCwd(), '../../package.json');
     if (!fs.existsSync(absPath)) {
         return null;
     }
